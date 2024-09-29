@@ -1,0 +1,15 @@
+{
+  "name": "auth-jwt-cookies-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "../node_modules/@biomejs/biome/bin/biome format --write './server/**/*.{js,ts,jsx,tsx}' './client/**/*.{js,ts,jsx,tsx}'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2"
+  }
+}
