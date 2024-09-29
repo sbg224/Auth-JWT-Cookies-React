@@ -1,0 +1,89 @@
+.shootingStar {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1),
+        0 0 0 6px rgba(255, 255, 255, 0.1),
+        0 0 12px rgba(255, 255, 255, 1);
+    animation: animate 13s linear infinite;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg, #fff, transparent);
+    }
+}
+
+.s1 {
+    top: 50%;
+    left: 50%;
+    animation-delay: 3s;
+}
+
+.s2 {
+    top: 2%;
+    left: 10%;
+    animation-delay: 14s;
+}
+
+.s3 {
+    top: 22%;
+    left: 67%;
+    animation-delay: 25s;
+}
+
+.s4 {
+    top: 33%;
+    left: 93%;
+    animation-delay: 36s;
+}
+
+.s5 {
+    top: 40%;
+    left: 76%;
+    animation-delay: 47;
+}
+
+.s6 {
+    top: 15%;
+    left: 36%;
+    animation-delay: 59s;
+}
+
+.s7 {
+    top: 15%;
+    left: 5%;
+    animation-delay: 68s;
+}
+
+.s8 {
+    top: 5%;
+    left: 50%;
+    animation-delay: 77s;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    20%,
+    100% {
+        transform: rotate(315deg) translateX(-500px);
+        opacity: 0;
+    }
+}
