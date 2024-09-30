@@ -1,22 +1,56 @@
 :root {
-  color: #ffffffdc;
-
+	color: #ffffffdc;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background: linear-gradient(180deg, rgba(85,9,121,1) 25%, rgba(0,93,255,1) 100%);
+	background: linear-gradient(
+		180deg,
+		rgba(85, 9, 121, 1) 25%,
+		rgba(0, 93, 255, 1) 100%
+	);
+	overflow: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		color: #d8ad40;
+		transition: 0.5s;
+	}
 }
 
 #root {
-  min-height: 100vh;
-  background-image: url("../public//Login1.png"),
-  url("../public//Login2.png"),
-  url("../public//Login3.png"),
-  url("../public/stars.svg");
-  background-size: cover;
+	min-height: 100vh;
+	background-image: url("/Login1.png"), url("/Login2.png"),
+		url("/Login3.png"), url("/stars.svg");
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#pages {
+	min-height: 70vh;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.page {
+		text-align: center;
+
+		p {
+			margin: 2rem;
+			font-size: 1.5rem;
+		}
+	}
 }
