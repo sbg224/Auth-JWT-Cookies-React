@@ -28,8 +28,8 @@ a {
 
 #root {
 	min-height: 100vh;
-	background-image: url("/Login1.png"), url("/Login2.png"),
-		url("/Login3.png"), url("/stars.svg");
+	background-image: url("/Login1.png"), url("/Login2.png"), url("/Login3.png"),
+		url("/stars.svg");
 	background-size: cover;
 
 	display: flex;

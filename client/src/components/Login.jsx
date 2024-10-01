@@ -9,7 +9,11 @@ export default function Login({ setRegister, register }) {
 			</form>
 			<p>
 				Don't have an account?
-				<button id="register" onClick={() => setRegister(!register)} type="button" >
+				<button
+					id="register"
+					onClick={() => setRegister(!register)}
+					type="button"
+				>
 					Register
 				</button>
 			</p>

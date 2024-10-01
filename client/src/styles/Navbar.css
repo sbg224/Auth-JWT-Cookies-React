@@ -32,14 +32,13 @@ nav {
 			padding: 0.3rem 1rem;
 			margin-left: 1rem;
 			cursor: pointer;
-			transition:0.5s;
+			transition: 0.5s;
 
 			&:hover {
 				background: #fff;
 				background-position: 200% 200%;
 				color: #252525;
 			}
-
 		}
 	}
 }

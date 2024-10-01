@@ -2,12 +2,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
-	const location = useLocation()
+	const location = useLocation();
 	const navigate = useNavigate();
 
 	const handleLogout = () => {
 		navigate("/");
-	  };
+	};
 
 	return (
 		<nav>
@@ -22,10 +22,12 @@ export default function Navbar() {
 					<Link to={"/page2"}>Page 2</Link>
 				</li>
 				{location.pathname !== "/" && (
-          <li>
-            <button onClick={handleLogout} type="button">Logout</button>
-          </li>
-        )}
+					<li>
+						<button onClick={handleLogout} type="button">
+							Logout
+						</button>
+					</li>
+				)}
 			</ul>
 		</nav>
 	);
