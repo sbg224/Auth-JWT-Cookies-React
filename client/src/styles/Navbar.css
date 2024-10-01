@@ -13,11 +13,33 @@ nav {
 
 	ul {
 		display: flex;
+		align-items: center;
 		list-style: none;
 
 		li {
 			padding: 1rem;
-			font-size: 1.5rem;
+			font-size: 1rem;
+		}
+
+		button {
+			border: 2px solid #fff;
+			border-radius: 15px;
+			background: transparent;
+			background-size: 0% 0%;
+			color: inherit;
+			font-weight: 600;
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+			margin-left: 1rem;
+			cursor: pointer;
+			transition:0.5s;
+
+			&:hover {
+				background: #fff;
+				background-position: 200% 200%;
+				color: #252525;
+			}
+
 		}
 	}
 }

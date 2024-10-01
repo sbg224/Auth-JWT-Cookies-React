@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
+	const location = useLocation()
+
 	return (
 		<nav>
 			<p>
@@ -14,6 +16,11 @@ export default function Navbar() {
 				<li>
 					<Link to={"/page2"}>Page 2</Link>
 				</li>
+				{location.pathname !== "/" && (
+          <li>
+            <button type="button">Logout</button>
+          </li>
+        )}
 			</ul>
 		</nav>
 	);
