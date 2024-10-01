@@ -1,8 +1,13 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
 	const location = useLocation()
+	const navigate = useNavigate();
+
+	const handleLogout = () => {
+		navigate("/");
+	  };
 
 	return (
 		<nav>
@@ -18,7 +23,7 @@ export default function Navbar() {
 				</li>
 				{location.pathname !== "/" && (
           <li>
-            <button type="button">Logout</button>
+            <button onClick={handleLogout} type="button">Logout</button>
           </li>
         )}
 			</ul>
